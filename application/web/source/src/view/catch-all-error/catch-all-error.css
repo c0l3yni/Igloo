@@ -1,0 +1,9 @@
+body {
+  background-color: aquamarine;
+}
+
+#catch-all-error-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

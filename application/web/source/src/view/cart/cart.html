@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cart</title>
+    <link rel="shortcut icon" type="image/x-icon" href="#"/>
+    <link href="cart.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="cart-view" class="cart-container">
+    <div id="items-region">
+    </div>
+    <div class="subtotal-container">
+        <h3>Subtotal:</h3>
+        <h4 id="cart-total">$0.00</h4>
+        <button class="button-disabled" id="submit-payment">
+            Submit Payment
+        </button>
+    </div>
+</div>
+
+<script src="../../../../views/params.js" type="text/javascript"></script>
+<script>
+    const id = getParams().id;
+    const total = id === "99" ? 1 : 0;
+    let totalFormatted = getTotalFormatted(total);
+    document.getElementById("cart-total").innerHTML = totalFormatted;
+    document.getElementById("submit-payment").className = isButtonEnabled(total) ? "button-enabled" : "button-disabled";
+</script>
+</body>
+</html>

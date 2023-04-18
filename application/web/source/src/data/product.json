@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "description": "ceiling fan",
+    "price": 1
+  },
+
+  {
+    "id": "2",
+    "description": "window fan",
+    "price": 0
+  },
+  {
+    "id": "3",
+    "description": "Spider fan",
+    "price": -1
+  },
+  {
+    "id": "4",
+    "description": "Really expensive fan",
+    "price": 2147483647
+  }
+]

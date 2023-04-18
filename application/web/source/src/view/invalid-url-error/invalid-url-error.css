@@ -1,0 +1,9 @@
+body {
+  background-color: aquamarine;
+}
+
+#Invalid-URL-View {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

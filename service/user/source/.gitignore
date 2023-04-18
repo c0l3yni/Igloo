@@ -1,0 +1,5 @@
+#ignored files
+
+package-lock.json
+.idea
+cart.json
